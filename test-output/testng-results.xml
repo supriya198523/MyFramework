@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11653" started-at="2023-03-29T06:31:18Z" finished-at="2023-03-29T06:31:30Z">
+    <groups>
+    </groups>
+    <test name="Chrometest" duration-ms="9717" started-at="2023-03-29T06:31:18Z" finished-at="2023-03-29T06:31:28Z">
+      <class name="com.test.testclass">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.test.testclass@19d37183]" name="openBrowser" is-config="true" duration-ms="3480" started-at="2023-03-29T06:31:18Z" finished-at="2023-03-29T06:31:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="verifyEvent()[pri:-1, instance:com.test.testclass@19d37183]" name="verifyEvent" duration-ms="656" started-at="2023-03-29T06:31:21Z" finished-at="2023-03-29T06:31:22Z">
+          <exception class="java.text.ParseException">
+            <message>
+              <![CDATA[Unparseable date: "18/06/2000"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.text.ParseException: Unparseable date: "18/06/2000"
+at java.text.DateFormat.parse(Unknown Source)
+at com.pom.event.enterstartdate(event.java:80)
+at com.test.testclass.verifyEvent(testclass.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.text.ParseException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEvent -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult)[pri:0, instance:com.test.testclass@19d37183]" name="screenshot" is-config="true" duration-ms="418" started-at="2023-03-29T06:31:22Z" finished-at="2023-03-29T06:31:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEvent status=FAILURE method=testclass.verifyEvent()[pri:-1, instance:com.test.testclass@19d37183] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.test.testclass@19d37183]" name="closebrowser" is-config="true" duration-ms="5147" started-at="2023-03-29T06:31:22Z" finished-at="2023-03-29T06:31:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.test.testclass -->
+    </test> <!-- Chrometest -->
+    <test name="MozillaTest" duration-ms="11653" started-at="2023-03-29T06:31:18Z" finished-at="2023-03-29T06:31:30Z">
+      <class name="com.test.testclass">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.test.testclass@7995092a]" name="openBrowser" is-config="true" duration-ms="5391" started-at="2023-03-29T06:31:18Z" finished-at="2023-03-29T06:31:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="verifyEvent()[pri:-1, instance:com.test.testclass@7995092a]" name="verifyEvent" duration-ms="592" started-at="2023-03-29T06:31:23Z" finished-at="2023-03-29T06:31:24Z">
+          <exception class="java.text.ParseException">
+            <message>
+              <![CDATA[Unparseable date: "18/06/2000"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.text.ParseException: Unparseable date: "18/06/2000"
+at java.text.DateFormat.parse(Unknown Source)
+at com.pom.event.enterstartdate(event.java:80)
+at com.test.testclass.verifyEvent(testclass.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.text.ParseException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEvent -->
+        <test-method status="PASS" signature="screenshot(org.testng.ITestResult)[pri:0, instance:com.test.testclass@7995092a]" name="screenshot" is-config="true" duration-ms="44" started-at="2023-03-29T06:31:24Z" finished-at="2023-03-29T06:31:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEvent status=FAILURE method=testclass.verifyEvent()[pri:-1, instance:com.test.testclass@7995092a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.test.testclass@7995092a]" name="closebrowser" is-config="true" duration-ms="5617" started-at="2023-03-29T06:31:24Z" finished-at="2023-03-29T06:31:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.test.testclass -->
+    </test> <!-- MozillaTest -->
+  </suite> <!-- Suite -->
+</testng-results>
